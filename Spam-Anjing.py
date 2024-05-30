@@ -6,7 +6,7 @@ class docter:
                 self.ses=requests.Session()
 
         def alodoc(self,num):
-                self.ses.headers.update({'referer':'https:>
+                self.ses.headers.update({'referer':'https:'>
                 req1=self.ses.get('https://www.alodokter.c>
                 bs1=BS(req1.text,'html.parser')
                 token=bs1.find('meta',{'name':'csrf-token'>
